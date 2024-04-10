@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/Favicon.png">
+    <title>A Shepherd's Tale</title>
+</head>
+<body scroll="no" style="overflow: hidden">
+    <img src="gifs/mill4.gif" id="mill" alt="millhill animations"  width="250" />
+    <img src="img/logo.png" id="logo" alt="logo of a shepherds tale"  width="250" />
+    <table>
+        <tr>
+            <th colspan="4">TOP TEN PLAYERS</th>
+        </tr>
+        <tr>
+           <th>Player</th><th>Score</th><th>Time</th><th>Date</th>
+        </tr>
+        <%
+        let counter = 1; 
+        let profile;
+         data.forEach(function(d) {
+            switch(counter) {
+                case 1: profile = "img/firstplace.png";
+                break;
+                case 2: profile = "img/secondplace.png";
+                break;
+                case 3: profile = "img/thirdplace.png";
+                break;
+                default: profile ="img/normal.png";
+            }
+            counter++;
+            %> 
+            <tr>
+              <td id="player"><img src= <%=profile%> id="pb"></img><%= d.player_name %></td>
+              <td><%= d.score %></td>
+              <td><%= d.play_time %></td>
+              <td><%= d.date %></td>
+            </tr> 
+              
+           <% }) %>
+     </table>
+</body>
+</html>
