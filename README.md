@@ -1,12 +1,6 @@
 # RESTful API with Node.js, Express, and Postgres
 
-A Node.js app with PostgreSQL database deployed on heroku.
-
-As part of the project SE3, this app was implemented to update our highscores in the game online instead of locally.
-
-The highscore list can be found [here](https://ashepherdstale.herokuapp.com/highscore).
-
-And associated [github repo](https://github.com/dolisa2000/ashepherdstale_backend) (Only as contributor).
+Server to store the scores of players with successful runs for [A Shepherd's Tale](https://github.com/dolix2000/ashepherdstale-game).
 
 # MVC Pattern
 
