@@ -1,6 +1,6 @@
 # RESTful API with Node.js, Express, and Postgres
 
-Server to store the scores of players with successful runs for [A Shepherd's Tale](https://github.com/dolix2000/ashepherdstale-game).
+Server to store the scores of players with successful runs for [A Shepherd's Tale](https://github.com/dolix2000/a-shepherdstale).
 
 # MVC Pattern
 
